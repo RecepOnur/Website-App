@@ -1,0 +1,82 @@
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dcd9d4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
+}
+
+.menuList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.menuItem img {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+}
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  padding: 20px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  border-radius: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.menuItem:hover {
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: 0.3s ease;
+}
+.menuItem p {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.siparisSidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 6.25rem;
+  right: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #cfd9df;
+  border-radius: 5px;
+}
+.siparisSidebar li {
+  list-style-type: none;
+  margin-left: 10px;
+}
+.siparisSidebar button {
+  margin: 20px;
+  width: 6.5rem;
+  padding: 5px 0 5px 0;
+  font-size: 15px;
+  border: none;
+  color: #f1f7f4;
+  border-radius: 5px;
+  background-color: #157347;
+  cursor: pointer;
+}
+.siparisSidebar h2 {
+  margin-left: 2rem;
+}
